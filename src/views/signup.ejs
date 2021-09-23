@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+       
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>SIGNUP
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+         
+          <div class="row">    
+            <form action="/signup/register" method="POST" class="login">
+              <h2></h2>
+              <div class="login-cont">
+                  <input type="text" placeholder="Name" id="username">
+                 
+              </div>
+              <div class="login-cont">
+                  <input type="email" placeholder="Email" id="email">
+                 
+              </div>
+              <div class="login-cont">
+                  <input type="username" placeholder="Username" id="password">
+              </div>
+              <div class="login-cont">
+                  <input type="password"  placeholder="Password" id="confirm">
+                 
+              </div>
+              <div>
+                  <input id="signup-button" type="submit" value="SIGNUP">
+                 
+              </div>
+          </form>
+           
+          </div>
+         
+          <hr>
+         
+                  
+         
+
+         
+          
+          
+          <!--/stories-->
+          
+          
+          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Signup Form</title>
+   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+     body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background:#000044 ;
+      }
+      .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+    
+      .container h2{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .container input[type = "text"],.box input[type = "text"]{
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 300px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+      }
+      .container input[type = "text"]:focus,.box input[type = "text"]:focus{
+        width: 300px;
+        border-color: #2ecc71;
+      }
+      .container input[type = "email"],.box input[type = "email"]{
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 300px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+      }
+      .container input[type = "email"]:focus,.box input[type = "email"]:focus{
+        width: 300px;
+        border-color: #2ecc71;
+      }
+      .container input[type = "Password"],.box input[type = "Password"]{
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 300px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+      }
+      .container input[type = "Password"]:focus,.box input[type = "Password"]:focus{
+        width: 300px;
+        border-color: #2ecc71;
+      }
+      .container input[type = "submit"]{
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #2ecc71;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+      }
+      .container input[type = "submit"]:hover{
+        background: #2ecc71;
+      }
+  </style>    
+</style>
+</head>
+<body>
+<div class="container">
+    
+
+    <form action="#" onsubmit="return validate()" class="login">
+        <h2>Library Signup Form</h2>
+        <div class="login-cont">
+            <input type="text" placeholder="Username" id="username">
+           
+        </div>
+        <div class="login-cont">
+            <input type="email" placeholder="Email" id="email">
+           
+        </div>
+        <div class="login-cont">
+            <input type="Password" placeholder="Password" id="password">
+        </div>
+        <div class="login-cont">
+            <input type="Password" placeholder="Confirm Password" id="confirm">
+           
+        </div>
+        <div>
+            <input id="signup-button" type="submit" value="SIGNUP">
+           
+        </div>
+    </form>
+ 
+</div>
+
+   
+   <script src="validate.js"></script>
+
+    
+</body>
+</html>
